@@ -37,7 +37,7 @@ for x in range(1,4):
 		break
 
 for x in range(1,4):
-	if os.system("sudo apt-get install -y python-dev python3-pip libfreetype6-dev libjpeg-dev build-essential") == 0:
+		if os.system("sudo apt-get install -y python-dev-is-python3 python3-pip libfreetype6-dev libjpeg-dev build-essential") == 0:
 		break
 
 for x in range(1,4):
