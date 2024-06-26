@@ -87,17 +87,6 @@ except:
 	print('try again')
 
 
-CMDLINE_FILE = open('/boot/cmdline.txt', 'r')
-OLD_LINES = CMDLINE_FILE.readlines()
-CMDLINE_FILE.close()
-
-CMDLINE_FILE = open('/boot/cmdline.txt', 'w+')
-for EACH_LINE in OLD_LINES:
-	NEW_LINES = re.sub('console=serial0,115200', '', EACH_LINE)
-	CMDLINE_FILE.writelines(NEW_LINES)
-
-CMDLINE_FILE.close()
-
 
 for x in range(1,4):
 	if os.system("pip3 install opencv-contrib-python==3.4.11.45") == 0:
